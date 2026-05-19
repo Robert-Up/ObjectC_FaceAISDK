@@ -23,6 +23,8 @@ public struct AddFaceByCamera: View {
     
     // 根据状态码转换为对应的文字提示
     private func localizedTip(for code: Int) -> String {
+        
+        let testViewController = ViewController()
         let key = "Face_Tips_Code_\(code)"
         let defaultValue = "Add Face Tips Code=\(code)"
         let tipsString = NSLocalizedString(key, value: defaultValue, comment: "")

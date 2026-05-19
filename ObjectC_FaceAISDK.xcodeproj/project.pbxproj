@@ -59,6 +59,7 @@
 		7CB7AFF52FB6EC0A003E82D9 /* TTSPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
 		95FCDDDF937FE2F09B90634A /* Pods-ObjectC_FaceAISDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectC_FaceAISDK.debug.xcconfig"; path = "Target Support Files/Pods-ObjectC_FaceAISDK/Pods-ObjectC_FaceAISDK.debug.xcconfig"; sourceTree = "<group>"; };
 		B11C75461DEB65D99C165C15 /* Pods_ObjectC_FaceAISDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectC_FaceAISDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB531A62FBBF21F00327219 /* ObjectC_FaceAISDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectC_FaceAISDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF65FF412EC4C57000FAC49A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CF7824C92EC33E3F002D143C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +119,7 @@
 		7CB7AFE82FB6EC0A003E82D9 /* FaceAISDK */ = {
 			isa = PBXGroup;
 			children = (
+				CEB531A62FBBF21F00327219 /* ObjectC_FaceAISDK-Bridging-Header.h */,
 				7CB7AFEC2FB6EC0A003E82D9 /* addFace */,
 				7CB7AFE92FB6EC0A003E82D9 /* CustomToastView.swift */,
 				7CB7AFEB2FB6EC0A003E82D9 /* VerifyFaceView.swift */,
@@ -242,9 +244,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectC_FaceAISDK/Pods-ObjectC_FaceAISDK-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectC_FaceAISDK/Pods-ObjectC_FaceAISDK-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,9 +265,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectC_FaceAISDK/Pods-ObjectC_FaceAISDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ObjectC_FaceAISDK/Pods-ObjectC_FaceAISDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,7 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G35M5X479Y;
+				DEVELOPMENT_TEAM = R45LY736NP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ObjectC_FaceAISDK/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "需要访问相机以完成人脸录入和活体检测功能";
@@ -485,11 +495,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.faceaisdk.ObjectC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fooww.meijuyun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ObjectC_FaceAISDK/ObjectC_FaceAISDK-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,7 +517,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G35M5X479Y;
+				DEVELOPMENT_TEAM = R45LY736NP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ObjectC_FaceAISDK/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "需要访问相机以完成人脸录入和活体检测功能";
@@ -524,11 +534,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.faceaisdk.ObjectC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fooww.meijuyun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ObjectC_FaceAISDK/ObjectC_FaceAISDK-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
